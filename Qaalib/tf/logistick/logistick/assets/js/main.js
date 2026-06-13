@@ -594,7 +594,6 @@ var testimonialsTwoSlider = new Swiper(".testimonials-two-slider", {
       delay: 2500,
       disableOnInteraction: false, 
     },
-    autoplay: false,
   });
   
   var testimonialsThreeContentSlider = new Swiper(".testimonials-three-content-slider", {
@@ -616,7 +615,6 @@ var testimonialsTwoSlider = new Swiper(".testimonials-two-slider", {
       delay: 2500,
       disableOnInteraction: false, 
     },
-    autoplay: false,
     navigation: {
       nextEl: ".testimonials-three-btn-next",
       prevEl: ".testimonials-three-btn-prev",

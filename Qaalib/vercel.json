@@ -1,12 +1,7 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "",
-  "public": "tf/logistick/logistick",
-  "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "tf/logistick/logistick",
+  "cleanUrls": true
 }

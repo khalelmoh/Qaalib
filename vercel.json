@@ -1,9 +1,7 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/wowtheme7.com/tf/logistick/logistick/index-3.html",
-      "permanent": false
-    }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "Qaalib/tf/logistick/logistick",
+  "cleanUrls": true
 }

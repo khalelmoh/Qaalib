@@ -9084,6 +9084,23 @@ input[type=number] {
     width: 66%;
 }
 
+.contact-info-grid > .d-flex {
+    min-width: 0;
+}
+
+.contact-info-grid p,
+.contact-info-grid a {
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 575px) {
+    .contact-info-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+    }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .video-five-bg {
         width: 50%;

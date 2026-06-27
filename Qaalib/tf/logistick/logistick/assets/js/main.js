@@ -455,7 +455,6 @@ var teamSlider = new Swiper(".team-slider", {
     delay: 2500,
     disableOnInteraction: false,
   },
-  autoplay: false,
   pagination: {
     el: ".team-pagination",
     clickable: true,
@@ -478,6 +477,7 @@ var teamSlider = new Swiper(".team-slider", {
     },
   },
 });
+
 // ================================= Project slider Start =========================
 
 

@@ -930,6 +930,39 @@ const bannerFiveSlider = new Swiper('.banner-five-active', {
 // ========================= Banner Five Js End ===================
 
 
+// ========================= Static Form Handling Start ===================
+document.querySelectorAll('[data-mailto-form]').forEach(function(form) {
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var recipient = form.getAttribute('data-mailto') || 'mohqa143@hotmail.com';
+    var subject = form.getAttribute('data-mail-subject') || 'Website inquiry';
+    var values = [];
+
+    form.querySelectorAll('input, textarea, select').forEach(function(field) {
+      if (!field.type || field.type !== 'hidden') {
+        var label = field.getAttribute('aria-label') || field.getAttribute('name') || field.getAttribute('placeholder') || field.id || 'Field';
+        var value = '';
+
+        if (field.type === 'checkbox' || field.type === 'radio') {
+          if (!field.checked) return;
+          value = field.value || 'Yes';
+        } else {
+          value = field.value;
+        }
+
+        if (value) {
+          values.push(label.replace('*', '').trim() + ': ' + value);
+        }
+      }
+    });
+
+    var body = values.length ? values.join('\n') : 'Please contact me about Qaalib services.';
+    window.location.href = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+});
+// ========================= Static Form Handling End ===================
+
 
 
 
